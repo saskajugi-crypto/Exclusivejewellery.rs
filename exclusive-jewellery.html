@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Exclusive Jewellery — Luksuzni nakit</title>
+  <meta name="description" content="Exclusive Jewellery — luksuzni nakit od zlata i dijamanata. Kontakt: +381 63 411 522. Instagram: @exclusivejewellery_1" />
+  <meta name="theme-color" content="#000000" />
+
+  <style>
+    :root{
+      --bg:#000;
+      --card:#0b0b0b;
+      --accent:#c18b27; /* gold accent */
+      --muted:#cfcfcf;
+      --container-width:720px;
+      color-scheme: dark;
+    }
+    html,body{
+      height:100%;
+      margin:0;
+      background:linear-gradient(180deg,#000 0%, #080808 60%);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      color:var(--muted);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .wrap{
+      min-height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:48px 20px;
+    }
+    .card{
+      width:100%;
+      max-width:var(--container-width);
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.04);
+      padding:36px;
+      text-align:center;
+      border-radius:10px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.6);
+    }
+    h1{
+      margin:0 0 8px 0;
+      font-size:clamp(1.4rem, 3vw, 2.2rem);
+      color:white;
+      letter-spacing:0.6px;
+    }
+    h2{
+      margin:0 0 10px 0;
+      font-weight:600;
+      color:var(--accent);
+      font-size:1rem;
+    }
+    p.lead{
+      margin:10px 0 22px 0;
+      color:var(--muted);
+      font-size:0.99rem;
+    }
+    .contacts{
+      display:flex;
+      gap:12px;
+      justify-content:center;
+      flex-wrap:wrap;
+      margin-top:18px;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 16px;
+      border-radius:8px;
+      text-decoration:none;
+      color:inherit;
+      background:transparent;
+      border:1px solid rgba(255,255,255,0.06);
+      transition:transform .12s ease, box-shadow .12s ease;
+      font-weight:600;
+    }
+    .btn:focus{
+      outline:3px solid rgba(193,139,39,0.15);
+      outline-offset:3px;
+    }
+    .btn:hover{ transform:translateY(-3px); box-shadow:0 8px 20px rgba(0,0,0,0.5); }
+    .btn--tel{ color:#fff; border-color: rgba(193,139,39,0.2); background:linear-gradient(180deg, rgba(193,139,39,0.06), rgba(193,139,39,0.02)); }
+    .btn--ig{ color:#fff; border-color: rgba(131,58,180,0.18); background:linear-gradient(180deg, rgba(131,58,180,0.04), rgba(253,29,29,0.02)); }
+    .small{
+      margin-top:16px;
+      font-size:0.86rem;
+      color:#bfbfbf;
+    }
+
+    @media (max-width:480px){
+      .card{ padding:20px; border-radius:8px; }
+      .contacts{ gap:8px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "JewelryStore",
+    "name": "Exclusive Jewellery",
+    "telephone": "+38163411522",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "RS"
+    },
+    "sameAs": [
+      "https://instagram.com/exclusivejewellery_1"
+    ],
+    "description": "Luksuzni nakit od zlata i dijamanata."
+  }
+  </script>
+</head>
+<body>
+  <main class="wrap" role="main">
+    <section class="card" aria-labelledby="brand-title">
+      <header>
+        <h1 id="brand-title">Exclusive Jewellery</h1>
+        <h2>Fine Jewellery — Zlato i Dijamanti</h2>
+        <p class="lead">Luksuzni nakit · Zlato · Dijamanti</p>
+      </header>
+
+      <div class="contacts" aria-label="Kontakt informacije">
+        <!-- phone link uses RFC-compliant tel format (no spaces) -->
+        <a class="btn btn--tel" href="tel:+38163411522" aria-label="Pozovite Exclusive Jewellery na broj +381 63 411 522">📞 +381 63 411 522</a>
+
+        <!-- instagram link opens in new tab safely -->
+        <a class="btn btn--ig" href="https://instagram.com/exclusivejewellery_1" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram profil Exclusive Jewellery">@exclusivejewellery_1</a>
+      </div>
+
+      <p class="small">Radno vreme i ponuda dostupni na Instagramu. Za prilagođene narudžbine pišite putem DM ili nas pozovite.</p>
+    </section>
+  </main>
+</body>
+</html>
